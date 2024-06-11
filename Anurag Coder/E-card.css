@@ -1,0 +1,138 @@
+*{
+    /* margin: 0;
+    padding:0; */
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color: black;
+    color:white;
+    
+    /* overflow:hidden; */
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.circle{
+    border-radius: 100%;
+    position:absolute;
+   
+    
+}
+.circle-1{
+    height:120px;
+    width:120px;
+    background-image: radial-gradient(rgb(129, 11, 129),violet);
+    top:-40px;
+    left:-50px;
+}
+.circle-2{
+    height:250px;
+    width:250px;
+    background-image: radial-gradient(rgb(229, 93, 229),rgb(138, 17, 138));
+    top:-40px;
+    right:-160px;
+}
+.circle-3{
+    height:200px;
+    width:200px;
+    background-image: radial-gradient(rgb(129, 11, 129),violet);
+    bottom:-35px;
+    left:-150px;
+}
+
+.card-container{
+  
+    position:relative;
+}
+.card{
+   
+    max-width:400px;
+    background-image:linear-gradient(148deg, rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.1) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding:18px;
+}
+.card-content{
+    border:0.744px solid rgba(255,255,255,0.30);
+    border-radius: 10px;
+}
+
+.card-image{
+    width:100%;
+    vertical-align:middle; 
+}
+.card-text{
+    padding:24px 18px;
+}
+
+.tag-heart-container{
+    display: flex;
+    justify-content: space-between;
+    
+   
+    /* margin-top: 22px; */
+}
+.tag-heart-container .heart{
+    cursor:pointer;
+}
+.tag{
+    border-radius: 5px;
+    background:rgba(241,198,68,0.24);
+    color:#FFD147;
+    padding: 2px 8px;
+}
+
+.card-title{
+    font-size: 18px;
+   
+    /* color: white; */
+}
+.card-subtitle{
+    font-weight:500;
+    font-size: 12px;
+   
+    color:white;
+   
+}
+.star-rating{
+    display:flex;
+    align-items: center;
+}
+
+.rating-value{
+    font-size: 14px;
+    color:#f1c644;
+    margin-inline: 8px;
+}
+.rating-count{
+    font-size: 14px;
+    color:#f1c644;
+}
+
+.cart-button{
+    width:100%;
+    background-color: transparent;
+    border:none;
+    /* color:inherit; to inherit parent color */
+    color:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    /* padding -block for top nd bottom */
+    padding-block:30px;
+    border-top:1px solid rgb(216, 202, 202);
+    font-size: 18px;
+    cursor:pointer;
+    opacity:0.8;
+}
+.cart-button:hover{
+    opacity:1;
+}

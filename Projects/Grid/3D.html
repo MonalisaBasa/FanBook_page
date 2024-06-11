@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D html</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            width:100%;
+            height:100%;
+        }
+        .container{
+            width: 100%;
+            height:100%;
+            background-color: burlywood;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding:5rem;
+         }
+        .items{
+            height:250px;
+            width:250px;
+            background-color: rgb(10, 245, 112);
+            border:2px solid black;
+            padding: 2rem;
+         }
+         #rotateX:hover{
+            transform: rotateX(45deg);
+         }
+         #rotateY:hover{
+            transform: rotateY(30deg);
+         }
+         #rotateZ:hover{
+            transform:rotateZ(-45deg);
+         }
+         #scaleX:hover{
+            transform: scaleX(2);
+         }
+         #scaleY:hover{
+            transform: scaleY(2);
+         }
+         #scaleZ:hover{
+            transform:perspective(300px) scaleZ(2.5) rotateY(30deg);
+         }
+         #translateX:hover{
+            transform: translateX(300px);
+         }
+         #translateY:hover{
+            transform: translateY(300px);
+         }
+         #translateZ:hover{
+            transform:prespective(300px) translateZ(100px);
+         }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="rotateX">Rx</div>
+        <div class="items" id="rotateY">Ry</div>
+        <div class="items" id="rotateZ">Rz</div>
+        <div class="items" id="scaleX">Sx</div>
+        <div class="items" id="scaleY">Sy</div>
+        <div class="items" id="scaleZ">Sz</div>
+        <div class="items" id="translateX">Tx</div>
+        <div class="items" id="translateY">Ty</div>
+        <div class="items" id="translateZ">Tz</div>
+
+    </div>
+    
+</body>
+</html>

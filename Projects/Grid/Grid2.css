@@ -1,0 +1,28 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+}
+.container{
+    height:100%;
+    width:100%;
+    background-color: grey;
+    display:grid;
+    grid-template-columns: repeat(1,300px);
+    grid-template-rows: repeat(4,200px);
+    gap:2rem;
+    padding:4rem;
+}
+
+.item{
+    height:100px;
+    width:100px;
+    background-color:rgb(37, 217, 37);
+    border:5px solid rgb(231, 217, 217);
+    justify-self: end;
+}

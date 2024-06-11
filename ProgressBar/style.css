@@ -1,0 +1,90 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+body{
+    color:#ffff;
+    background-color: #081b29;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+
+}
+.sub-title span{
+    color:#0ef;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width:600px;
+    height:500px;
+    padding:75px 90px;
+    margin-left: 120px;
+}
+.heading{
+    text-align:center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom:50px;
+}
+.bar{
+    font-size:20px;
+}
+.Technical-bars .bar{
+    margin:40px 0;
+}
+.Technical-bars .bar:first-child{
+margin-top:0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom:0;
+}
+.Technical-bars .bar .info{
+    margin-bottom:5px;
+}
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight:500;
+    animation:showText 0.5s 1s linear forwards;
+    /* opacity: 0; */
+}
+.Technical-bars .bar .progress-line{
+    position:relative;
+    border-radius: 10px;
+    width:100%;
+    height:5px;
+    background-color: #000;
+    animation:animate 1s cubic-bezier(1,0,0,5,1) forwards;
+   /* //It's commonly used for hiding elements or creating animation effects  */
+    /* transform:scaleX(0); 
+    transform-origin: left; */
+    /* transition: width 0.5s ease-in-out; */
+}
+@keyframes animate{
+    100%{
+        transform:scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height:100%;
+    background-color:#0ef;
+    position:absolute;
+    border-radius: 10px;
+    /* animation:animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform:scaleX(0);
+    transform-origin: left; */
+    transition: width 0.5s ease-in-out;
+}
+/* .progress-line .html span{
+    width:90%;
+}  */

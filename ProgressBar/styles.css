@@ -1,0 +1,133 @@
+/* style.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #081b29;
+  color: #fff;
+}
+
+/* Center the subtitle */
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.sub-title span{
+  color:#0ef;
+}
+
+/* Style for the container */
+.container1 {
+  width: 600px;
+  height: 500px;
+  padding:75px 90px;
+ 
+  margin-left: 120px;
+}
+
+/* Style for the heading */
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 30px;
+}
+
+/* Style for the bars */
+.bar {
+  /* display: flex; */
+  align-items: center;
+  margin-bottom: 20px;
+  position:relative;
+}
+
+/* Style for the icon */
+.bar i {
+  font-size: 20px;
+  margin-top:0;
+  margin-right: 20px;
+}
+
+
+
+/* Style for the info */
+.bar .info span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style for the progress line */
+.progress-line {
+  width: 100%;
+  height: 5px;
+  background-color: #131212;
+  border-radius: 10px;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.Technical-bars .bar:last-child{
+  margin-bottom:10px;
+}
+
+/* Style for the progress line span */
+.progress-line span {
+  display: block;
+  height: 100%;
+  /* background-color: #0ef; */
+  border-radius: 10px;
+  animation: animateProgress 1s ease-in-out; /* Animation for the progress */
+}
+
+/* Keyframes for the progress animation */
+@keyframes animateProgress {
+  from {
+      width: 0; /* Start width */
+  }
+  to {
+      width: 100%; /* End width */
+  }
+}
+.percentage {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+}
+/* Specific percentages for each technology */
+.progress-line.html span {
+  background-color: #0ef; /* Color for HTML */
+  width: 90%; /* Percentage for HTML */
+}
+
+.progress-line.css span {
+  background-color: #0fe; /* Color for CSS */
+  width: 50%; /* Percentage for CSS */
+}
+
+.progress-line.javascript span {
+  background-color: #f0e; /* Color for JavaScript */
+  width: 70%; /* Percentage for JavaScript */
+}
+
+.progress-line.python span {
+  background-color: #f00; /* Color for Python */
+  width: 60%; /* Percentage for Python */
+}
+
+.progress-line.react span {
+  background-color: #0f0; /* Color for React */
+  width: 50%; /* Percentage for React */
+}
+
+  
